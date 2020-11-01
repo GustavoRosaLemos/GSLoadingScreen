@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, user-scalable=0"/>
+        <link rel="stylesheet" href="style.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet"/>
+    </head>
+    <body>
+        <div class="background">
+            <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allowfullscreen
+                src="https://www.youtube.com/embed/HYlP3iDMP_s?autoplay=1&mute=1&loop=1&start=10">
+            </iframe>
+            <div class="blackfilter"></div>
+            <div id="musicplayer"></div>
+            <div class="contentspace">
+                <div class="topspace">
+                    <div class="musicplayer">
+                        <div class="musicbutton">
+                            <img src="img/back.png" alt="back" id="backbutton" height="20px" onclick="clickback()">
+                            <img src="img/pause.png" id="playbutton" alt="play/stop" height="20px" onclick="clickplay()">
+                            <img src="img/next.png" alt="next" id="nextbutton" height="20px" onclick="clickskip()">
+                        </div>
+                        <div class="volume">
+                            <input type="range" min="0" max="100" value="30" class="slider" id="volume">
+                        </div>
+                        <div class="musiclegend">
+                            <div id="info"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="middlespace">
+                    <div class="servername">GoldenScripts</div>
+                    <div class="description">O melhor servidor!</div>
+                </div>
+                <div class="bottomspace">
+                    <div class="loading-text">Entrando no servidor...</div>
+                    <div class="loading">
+                        <div class="loading-progress"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img id="cursor" src="img/cursor.png"/>
+        <script src="script.js"></script>
+        <script src="music.js"></script>
+    </body>
+</html>

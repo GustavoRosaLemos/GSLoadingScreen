@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+    cursor: default;
+}
+
+#backgroundvideo {
+    position: fixed;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.background {
+    display: flex;
+}
+
+.blackfilter {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(27, 26, 26);
+    opacity: 80%;
+}
+
+.contentspace {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+
+.topspace, .middlespace, .bottomspace {
+    opacity: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.topspace {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+.musicplayer {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: 10px;
+    flex-direction: column;
+    justify-self: flex-start;
+    align-self: flex-start;
+    width: 300px;
+    border-radius: 0px 0px 8px 8px;
+    background-color: rgb(63, 63, 63);
+    opacity: 90%;
+}
+
+.musicbutton {
+    padding-top: 30px;
+    flex: 3;
+    display: flex;
+    justify-content: space-around;
+}
+
+.volume {
+    flex: 2;
+    padding-top: 15px;
+    padding-bottom: 7px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#playbutton:hover {
+    cursor: pointer;
+}
+
+#backbutton:hover {
+    cursor: pointer;
+}
+
+#nextbutton:hover {
+    cursor: pointer;
+}
+
+#volume:hover{
+    cursor: pointer;
+}
+
+.musiclegend {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 20px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    flex: 1;
+    color: white;
+}
+
+.middlespace {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.bottomspace {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.servername {
+    color: white;
+    font-size: 120px;
+    font-weight: bold;
+}
+
+.description {
+    color: white;
+    font-size: 30px;
+}
+
+
+.loading {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    background-color: rgba(209, 209, 209, 0.5);
+    background-color: rgb(63, 63, 63);
+}
+
+.loading-text {
+    align-self: flex-start;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    color: white;
+
+}
+
+.loading-progress {
+    width: 0%;
+    background-color: rgba(209, 209, 209, 0.5);
+}
+
+#cursor
+{
+    position: absolute;
+    z-index: 1;
+    pointer-events: none;
+}
